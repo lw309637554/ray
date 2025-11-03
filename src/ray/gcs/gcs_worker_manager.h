@@ -23,7 +23,7 @@
 #include "ray/pubsub/gcs_publisher.h"
 #include "ray/stats/metric.h"
 #include "ray/util/counter_map.h"
-#include "ray/gcs/gcs_server/gcs_init_data.h"
+#include "ray/gcs/gcs_init_data.h"
 
 namespace ray {
 namespace gcs {

@@ -726,7 +726,7 @@ void GcsServer::InitRuntimeEnvManager() {
       /*max_active_rpcs_per_handler=*/-1));
 }
 
-void GcsServer::InitGcsWorkerManager() {
+void GcsServer::InitGcsWorkerManager(const GcsInitData &gcs_init_data) {
   gcs_worker_manager_ = std::make_unique<GcsWorkerManager>(
       RayConfig::instance().maximum_gcs_dead_worker_cached_count(),*gcs_table_storage_, io_context_provider_.GetDefaultIOContext(), *gcs_publisher_);
 
